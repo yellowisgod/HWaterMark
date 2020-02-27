@@ -1,0 +1,19 @@
+SET(OpenCV_DIR $ENV{OPENCV_DIR})
+SET(OpenCV_LIBS $ENV{OPENCV_LIBS})
+FIND_PACKAGE(OpenCV REQUIRED)
+IF(OpenCV_FOUND)
+    LINK_LIBRARIES(${OpenCV_LIBS})
+ELSE()
+    MESSAGE("OPENCV NOT FOUND")
+ENDIF()
+SET(test_opencv_SRCS
+    #ADD SOURCE FILE FOR THIS APP HERE
+    test_opencvMain.cpp
+)
+
+SET(test_opencv_LIBS
+    #ADD LIB FILE FOR THIS PROJECT HERE
+)
+
+ADD_EXECUTABLE(test_opencv ${test_opencv_SRCS})
+TARGET_LINK_LIBRARIES(test_opencv ${test_opencv_LIBS})
