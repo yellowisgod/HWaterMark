@@ -14,5 +14,7 @@ int main(int argc,char** argv)
     c=a+b;
     c=a*b;
 
+    int f=1;
+
     return a.exec();
 }
