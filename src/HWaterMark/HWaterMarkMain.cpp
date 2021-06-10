@@ -22,5 +22,9 @@ int main(int argc,char** argv)
     f=d*e;
 
 
+    //
+    int test1=0;
+
+
     return a.exec();
 }
