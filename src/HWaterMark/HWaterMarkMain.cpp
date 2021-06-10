@@ -26,7 +26,7 @@ int main(int argc,char** argv)
     int test1=0;
     int test2=0;
     int test3=3;
-    
+    int test4=4;
 
 
     return a.exec();
